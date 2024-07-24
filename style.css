@@ -1,11 +1,11 @@
-.input-style{
- color: antiquewhite    ;
-min-height: 35px;
-    background: rgb(0, 0, 24)  ;
+.input-style {
+    color: antiquewhite;
+    min-height: 35px;
+    background: rgb(0, 0, 24);
     outline: none;
     border: none;
     border-radius: 20px;
-} 
+}
 
 .button-add {
     color: #ffffff;
@@ -15,10 +15,29 @@ min-height: 35px;
     border-radius: 11px;
     padding: 14px 48px;
     letter-spacing: 1px;
-    cursor: pointer ; 
+    cursor: pointer;
     transition: 0.2s;
     font-weight: bold;
 }
+
 .button-add:hover {
     background-color: #008528;
+}
+
+.remove_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove_btn:hover {
+    transform: rotate(180deg);
+}
+
+.remove_btn::selection {
+    display: none;
 }
