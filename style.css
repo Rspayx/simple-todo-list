@@ -6,7 +6,6 @@
     border: none;
     border-radius: 20px;
 }
-
 .button-add {
     color: #ffffff;
     background-color: #03122c;
@@ -19,11 +18,9 @@
     transition: 0.2s;
     font-weight: bold;
 }
-
 .button-add:hover {
     background-color: #008528;
 }
-
 .remove_btn {
     position: absolute;
     right: 0;
@@ -33,11 +30,9 @@
     cursor: pointer;
     transition: 0.2s;
 }
-
 .remove_btn:hover {
     transform: rotate(180deg);
 }
-
 .remove_btn::selection {
     display: none;
 }
