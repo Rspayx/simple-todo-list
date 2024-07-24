@@ -7,23 +7,19 @@ const btn_remove_all = document.getElementById("btn-remove-all");
 // colors
 const color = ['263238', 'DD2C00', '3E2723', '827717', '33691E', '1B5E20', 'f80036', '004D40', '311B92', '1A237E', 'C51162', 'D50000', '4A148C', '212121', '880E4F', 'B71C1C', '2E7D32', 'D84315', '000000'];
 
-
 //For remove all cards
 btn_remove_all.addEventListener('click', () => {
   function doAction(message) {
     if (confirm(message)) {
       localStorage.clear()
       mother_div_cards.replaceChildren();
-
-
-
       alert("All items were deleted")
 
     } else {
       alert("OK, this action has been cancelled")
     }
   };
-  doAction('heloo', 'hi');
+  doAction('Are you sure you want to delete all ?');
 })
 
 //for add cards
@@ -35,8 +31,6 @@ btn_add.addEventListener("click", () => {
 function add_cards() {
   const input_sub_value = input_sub.value;
   const input_desc_value = input_desc.value;
-
-
 
   if (
     input_sub_value == false ||
@@ -59,9 +53,7 @@ function add_cards() {
     <p class="fs-5 m-0 mt-2  fw-bold text-center text-white position-relative"> ${input_sub_value} <span class="remove_btn text-danger" alt onclick="remove_card(this)" >✕</span> </p>
     <hr class="m-0 text-bg-danger">
     <p class="fs-6 mt-1 text-center text-white "> ${input_desc_value} </p>
-</div>
-       `;
-
+</div> `;
     mother_div_cards.insertAdjacentHTML("beforeend", data_element);
 
     save_in_storage(input_sub_value, input_desc_value);
@@ -69,7 +61,6 @@ function add_cards() {
     input_desc.value = "";
   }
 }
-
 // save in LocalStorage 
 function save_in_storage(subject, description) {
   localStorage.setItem(subject, description);
@@ -95,13 +86,9 @@ data_storage.forEach(element => {
     <p class="fs-5 m-0 mt-2  fw-bold text-center text-white position-relative"  data-value="${element[0]}"> ${element[0]} <span class="remove_btn text-danger" alt onclick="remove_card(this)" >✕</span> </p>
     <hr class="m-0 text-bg-danger">
     <p class="fs-6 mt-1 text-center text-white "> ${element[1]} </p>
-</div>
-`;
-
+</div> `;
   mother_div_cards.insertAdjacentHTML("beforeend", data_element);
-
 });
-
 
 //Remove card | remove button
 function remove_card(item) {
@@ -111,6 +98,3 @@ function remove_card(item) {
   const dataValue = parentP.dataset.value;
   localStorage.removeItem(dataValue);
 }
-
-
-
