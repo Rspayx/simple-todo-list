@@ -1,6 +1,9 @@
-![Project Screenshot](https://github.com/user-attachments/assets/d91eda9e-f6ed-4608-af17-8eae7021a85e)
+![Project Screenshot 1](https://github.com/user-attachments/assets/70d2c8f9-9395-4d34-901a-e179e62d9d26)
 
-#Contribution
+![Project Screenshot 2](https://github.com/user-attachments/assets/8e4820f0-8c01-4511-a5ce-15b0493d37e0)
+
+# Description
+
 This is a kind of simple to-do list that I wanted to also serve as a notebook, so it can be used for two purposes. This program has been created as a test and not much time has been spent on designing it; the focus has been on overall functionality. If you want, you can help in developing and improving the code and features of this to-do list . 
 
 You can fully review the requirements in the Contribution section and participate in bug fixing, speed optimization, or adding features (such as adding favorites, etc.).
